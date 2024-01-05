@@ -1,0 +1,49 @@
+.levelSection {
+  background-color: rgba(0, 0, 0, 0.945);
+  color: white;
+  padding: 50px 10px;
+  margin-bottom: 100px;
+}
+.levelSection h1 {
+  margin-bottom: 60px;
+  font-size: 50px;
+}
+.levelSection .levelContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.levelContent .box {
+  text-align: left;
+  width: 400px;
+  padding: 10px 25px;
+  background-color: #3a393954;
+  /* background-color: #3a3939; */
+  border-radius: 6px;
+  height: 100%;
+  transition: 0.5s;
+}
+.levelContent .box:hover {
+  /* background-color: #3a393954; */
+  background-color: #3a3939b2;
+}
+.levelContent .box h1 {
+  margin: 0;
+  font-size: 25px;
+}
+.levelSection .levelContent .box h6 {
+  margin-bottom: 40px;
+  color: #aaa;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .levelSection .levelContent {
+    flex-wrap: wrap;
+  }
+  .levelSection h1 {
+    font-size: 35px;
+  }
+}

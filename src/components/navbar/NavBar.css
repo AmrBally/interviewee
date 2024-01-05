@@ -1,0 +1,126 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  /* position: relative; */
+  padding: 20px 10px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 25px;
+  cursor: pointer;
+  /* position: relative; */
+  font-size: 20px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+header nav a:hover {
+  padding: 4px;
+  background-color: #cccccc85;
+  color: black;
+}
+
+header .navMobDown a:hover {
+  color: black;
+}
+header .buttons Button {
+  font-size: 15px;
+}
+header .buttons :first-child {
+  margin-right: 10px;
+}
+
+header .buttons :last-child,
+header .mobBtn :last-child {
+  background-color: black;
+  color: aliceblue;
+  border: none;
+  font-weight: bold;
+}
+
+header .buttons :last-child:hover,
+header .mobBtn :last-child:hover {
+  /* background-color: rgba(0, 0, 0, 0.548); */
+  color: red;
+}
+header .icons,
+.mobBtn {
+  display: none;
+}
+header .icons button {
+  border: none;
+  font-size: 22px;
+  background-color: transparent;
+}
+
+@media (max-width: 1024px) {
+  nav,
+  header .buttons {
+    display: none;
+  }
+  header .icons,
+  .mobBtn {
+    display: block;
+  }
+  header .navMob,
+  header .navMobDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    /* background-color: #d4c4b4fb; */
+    /* background-image: url("../images/backgbleesed.png"); */
+    border-radius: 20px;
+    z-index: 50000;
+  }
+  header .navMob {
+    top: -500px;
+    transition: 1s;
+  }
+  header .navMobDown {
+    top: 100px;
+    transition: 1s;
+    background-color: rgba(221, 220, 220, 0.932);
+  }
+  header .navMob a,
+  header .navMobDown a {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  header .navMobDown a {
+    color: black;
+  }
+  header .navMob div,
+  header .navMobDown div {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 auto;
+  }
+  header .navMob div Button,
+  header .navMobDown div Button {
+    margin: 5px 0;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navContainer {
+    position: sticky;
+    top: 0;
+    z-index: 6000;
+  }
+}

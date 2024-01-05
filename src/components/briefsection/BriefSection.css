@@ -1,0 +1,37 @@
+.briefContainer {
+  margin: 60px auto;
+}
+
+.briefContainer h1 {
+  font-weight: 400;
+  color: black;
+  margin-bottom: 40px;
+  font-size: 60px;
+}
+.briefContainer h1 span {
+  font-size: 80px;
+}
+
+.briefContainer span {
+  font-weight: bold;
+  color: black;
+}
+
+.briefContainer p {
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 1300px) {
+  .briefContainer {
+    margin: 130px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .briefContainer h1 {
+    font-size: 45px;
+  }
+  .briefContainer h1 span {
+    font-size: 60px;
+  }
+}
