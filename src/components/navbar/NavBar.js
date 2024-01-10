@@ -33,10 +33,10 @@ const NavBar = () => {
         </div>
         <nav className={mobile ? "navMobDown" : "navMob"}>
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
           <Link to="/categories">Jobs Categories</Link>
           <Link to="/pricing">Pricing</Link>
-          <Link to="/contactus">Contact Us</Link>
+          <Link to="/about">About</Link>
+          {/* <Link to="/contactus">Contact Us</Link> */}
           <div className="mobBtn">
             {user ? (
               <Button variant="danger" onClick={handleSignOut}>

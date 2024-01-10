@@ -1,0 +1,66 @@
+.pricingContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 92px auto;
+}
+.pricingContainer .header {
+  margin-bottom: 50px;
+}
+.pricingContainer .header h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.pricingContainer > p {
+  letter-spacing: 1.5px;
+}
+.pricingContainer .pricingContent {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.pricingContainer .pricingContent .box {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px 10px 0;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.pricingContainer .pricingContent .box h3 {
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.pricingContainer .pricingContent .box > span {
+  font-weight: bold;
+  font-size: 44px;
+}
+.pricingContainer .pricingContent .box h5 {
+}
+.pricingContainer .pricingContent .box .servContainer {
+  margin: 0 auto;
+}
+.pricingContainer .pricingContent .box .serv {
+  text-align: left;
+}
+.pricingContainer .pricingContent .box .serv span {
+  margin-right: 10px;
+}
+.pricingContainer .pricingContent .box p {
+}
+.pricingContainer .pricingContent .box Button {
+  width: 50%;
+  margin: 5px auto 40px;
+}
+
+.active {
+  background-color: aqua;
+}

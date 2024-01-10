@@ -17,6 +17,7 @@ import UserProfile from "./pages/profile/UserProfile";
 import { uid } from "uid";
 import ScrollButton from "./components/scrollButton/ScrollButton";
 import Pricing from "./pages/pricing/Pricing";
+import CheckOut from "./pages/checkout/CheckOut";
 
 function App() {
   const uuid = uid();
@@ -64,6 +65,16 @@ function App() {
               <NavBar />
               <Pricing />
               <ScrollButton />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/checkout"
+          element={
+            <>
+              <NavBar />
+              <CheckOut />
               <Footer />
             </>
           }

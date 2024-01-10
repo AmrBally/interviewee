@@ -91,3 +91,55 @@ export const jobsCategoties = [
     desc: "They conduct market research to learn about current content trends and target audiences.",
   },
 ];
+
+export const pricingList = [
+  {
+    id: 1,
+    plan: "STARTER",
+    price: "$5/mo",
+    populer: "",
+    service: [
+      "Automated Reporting",
+      "10 Interview",
+      "Faster Processing",
+      "cutomizations",
+    ],
+    info: "Literally you probably haven't heard of them jean shorts",
+    button: "Current plan",
+    color: "#449344",
+    btnColor: "success",
+  },
+  {
+    id: 2,
+    plan: "BASIC",
+    price: "$15/mo",
+    populer: "POPULAR",
+    service: [
+      "Everything in Starter",
+      "100 Interview",
+      "Progress Reports",
+      "Premium Support",
+    ],
+    info: "Literally you probably haven't heard of them jean shorts",
+    button: "Switch to Basic",
+    color: "#c99d4d",
+    btnColor: "warning",
+  },
+  {
+    id: 3,
+    plan: "PRO",
+    price: "$25/mo",
+    populer: "",
+    service: [
+      "Everyting in Basic",
+      "Unlimited Interview",
+      "Advanced Analytics",
+      "Company Evalutions",
+    ],
+    info: "Literally you probably haven't heard of them jean shorts",
+    button: "Switch to Pro",
+    color: "white",
+    backGroundColor: "#3c1f1f",
+    btnColor: "danger",
+  },
+];
